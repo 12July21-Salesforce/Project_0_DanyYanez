@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vaccines__c</fullName>
+    <externalId>false</externalId>
+    <label>Vaccines</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Bordetellosis (&quot;kennel cough&quot;)</fullName>
+                <default>false</default>
+                <label>Bordetellosis (&quot;kennel cough&quot;)</label>
+            </value>
+            <value>
+                <fullName>Canine adenovirus-2</fullName>
+                <default>false</default>
+                <label>Canine adenovirus-2</label>
+            </value>
+            <value>
+                <fullName>Canine distemper</fullName>
+                <default>false</default>
+                <label>Canine distemper</label>
+            </value>
+            <value>
+                <fullName>Canine enteric coronavirus</fullName>
+                <default>false</default>
+                <label>Canine enteric coronavirus</label>
+            </value>
+            <value>
+                <fullName>Canine influenza</fullName>
+                <default>false</default>
+                <label>Canine influenza</label>
+            </value>
+            <value>
+                <fullName>Canine parainfluenza</fullName>
+                <default>false</default>
+                <label>Canine parainfluenza</label>
+            </value>
+            <value>
+                <fullName>Canine parvovirus infection (&quot;parvo&quot;)</fullName>
+                <default>false</default>
+                <label>Canine parvovirus infection (&quot;parvo&quot;)</label>
+            </value>
+            <value>
+                <fullName>Heartworm disease</fullName>
+                <default>false</default>
+                <label>Heartworm disease</label>
+            </value>
+            <value>
+                <fullName>Intestinal worms</fullName>
+                <default>false</default>
+                <label>Intestinal worms</label>
+            </value>
+            <value>
+                <fullName>Leptospirosis</fullName>
+                <default>false</default>
+                <label>Leptospirosis</label>
+            </value>
+            <value>
+                <fullName>Lyme disease</fullName>
+                <default>false</default>
+                <label>Lyme disease</label>
+            </value>
+            <value>
+                <fullName>Rabies</fullName>
+                <default>false</default>
+                <label>Rabies</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

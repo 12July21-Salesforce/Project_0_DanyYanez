@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Good_With_Other_Dogs__c</fullName>
+    <externalId>false</externalId>
+    <label>Good With Other Dogs</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Recommended</fullName>
+                <default>false</default>
+                <label>Not Recommended</label>
+            </value>
+            <value>
+                <fullName>Medium</fullName>
+                <default>false</default>
+                <label>Medium</label>
+            </value>
+            <value>
+                <fullName>Good With Other Dogs</fullName>
+                <default>false</default>
+                <label>Good With Other Dogs</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

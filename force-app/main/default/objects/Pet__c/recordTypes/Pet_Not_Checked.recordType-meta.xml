@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pet_Not_Checked</fullName>
+    <active>true</active>
+    <label>Pet Not Checked</label>
+    <picklistValues>
+        <picklist>Gender__c</picklist>
+        <values>
+            <fullName>Female</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Male</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Medical_Status__c</picklist>
+        <values>
+            <fullName>Checked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Checked</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Adopted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Shelter</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Vaccines__c</picklist>
+        <values>
+            <fullName>Bordetellosis %28%22kennel cough%22%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canine adenovirus-2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canine distemper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canine enteric coronavirus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canine influenza</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canine parainfluenza</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canine parvovirus infection %28%22parvo%22%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heartworm disease</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intestinal worms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leptospirosis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lyme disease</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rabies</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>
