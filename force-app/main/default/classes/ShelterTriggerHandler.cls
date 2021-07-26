@@ -1,8 +1,6 @@
 public with sharing class ShelterTriggerHandler {
-
-    
+ 
     public static List<String> allShelters = new List<String>();
-
 
     static {
         for (List<Shelter__c> shelters : [SELECT City__c FROM Shelter__c]) {
@@ -14,7 +12,6 @@ public with sharing class ShelterTriggerHandler {
 
     public static void preventInvalidShelters(List<Shelter__c> newShelterList,
                                                       Map<ID, Shelter__c> oldShelterMap) {
-        
         for (Shelter__c shelter : newShelterList) {
             Boolean checkCity = (trigger.isInsert || 
                 oldShelterMap.get(shelter.Id).City__c != shelter.City__c);
