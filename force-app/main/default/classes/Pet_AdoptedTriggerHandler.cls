@@ -44,5 +44,3 @@ public with sharing class Pet_AdoptedTriggerHandler {
         }
     }
 }
-
-

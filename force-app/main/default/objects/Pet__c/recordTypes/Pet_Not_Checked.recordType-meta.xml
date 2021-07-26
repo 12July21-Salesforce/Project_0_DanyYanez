@@ -26,17 +26,6 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>Status__c</picklist>
-        <values>
-            <fullName>Adopted</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>In Shelter</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
         <picklist>Vaccines__c</picklist>
         <values>
             <fullName>Bordetellosis %28%22kennel cough%22%29</fullName>
