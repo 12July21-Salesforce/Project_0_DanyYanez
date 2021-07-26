@@ -1,28 +1,48 @@
-public with sharing class Pet_AdoptedClass {
-    
-    public static List<String> allPets = new List<String>();
-    public static List<String> allFamilies = new List<String>();
+public with sharing class Pet_AdoptedTriggerHandler {
 
-    static {
-        for (List<Pet_Adopted__c> pets : [SELECT Pet__r.Name FROM Pet_Adopted__c WHERE Pet__r.Status__c = 'Adopted']) {
+    public static void preventInvalidPets(List<Pet_Adopted__c> newPetList,
+                                                      Map<ID, Pet_Adopted__c> oldPetMap) {
+        List<Id> allPets = new List<Id>();
+
+        for (List<Pet_Adopted__c> pets : [SELECT Pet_Name__c FROM Pet_Adopted__c]) {
             for (Pet_Adopted__c p : pets) {
-                allPets.add(p.Name);
+                allPets.add(p.Pet_Name__c);
             }
         }
-    }
-
-    public static void preventInvalidDogs(List<Pet_Adopted__c> newPetList,
-                                                      Map<ID, Pet_Adopted__c> oldPetMap) {
         
         for (Pet_Adopted__c pet : newPetList) {
             Boolean checkName = (trigger.isInsert || 
-                oldPetMap.get(pet.Id).Name != pet.Name);
-            if (checkName && pet.Name != NULL) {
-                if (allPets.contains(pet.Name)) {
-                    pet.Name.addError(
+            oldPetMap.get(pet.Id).Pet_Name__c != pet.Pet_Name__c);
+            if (checkName && pet.Pet_Name__c != NULL) {
+                if (allPets.contains(pet.Pet_Name__c)) {
+                    pet.Pet_Name__c.addError(
                     'This Pet is already adopted.');
                 }
             }
         }
     }
+
+    public static void preventInvalidFamilies(List<Pet_Adopted__c> newPetList,
+                                                      Map<ID, Pet_Adopted__c> oldPetMap) {
+        List<Id> allFamilies = new List<Id>();
+
+        for (List<Family__c> family : [SELECT Id FROM Family__c WHERE Status__c != 'Approved']) {
+            for (Family__c f : family) {
+                allFamilies.add(f.Id);
+            }
+        }
+        
+        for (Pet_Adopted__c fam : newPetList) {
+            Boolean checkFamily = (trigger.isInsert || 
+            oldPetMap.get(fam.Id).Family_Name__c != fam.Family_Name__c);
+            if (checkFamily && fam.Family_Name__c != NULL) {
+                if (allFamilies.contains(fam.Family_Name__c)) {
+                    fam.Family_Name__c.addError(
+                    'This family has pending information.');
+                }
+            }
+        }
+    }
 }
+
+
