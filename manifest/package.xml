@@ -23,12 +23,20 @@
         <name>CustomObject</name>
     </types>
     <types>
-        <members>Breed__c</members>
-        <members>Family__c</members>
-        <members>Pet__c</members>
-        <members>Pet_Adopted__c</members>
-        <members>Shelter__c</members>
-        <name>CustomField</name>
+        <members>*</members>
+        <name>Profile</name>
+   </types>
+   <types>
+        <members>*</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomTab</name>
     </types>
     <version>52.0</version>
 </Package>
