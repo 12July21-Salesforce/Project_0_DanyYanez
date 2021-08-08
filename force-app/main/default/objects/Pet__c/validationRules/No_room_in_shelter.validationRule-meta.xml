@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_room_in_shelter</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(Shelter__r.Avialable__c)</errorConditionFormula>
+    <errorDisplayField>Shelter__c</errorDisplayField>
+    <errorMessage>This Shelter Is not Available</errorMessage>
+</ValidationRule>

@@ -5,6 +5,12 @@
         <name>ApexClass</name>
     </types>
     <types>
+        <recordTypes>
+        <fullName>Pet Checked</fullName>
+        <fullName>Pet Not Checked</fullName>
+        </recordTypes>
+    </types>
+    <types>
         <members>*</members>
         <name>ApexTrigger</name>
     </types>

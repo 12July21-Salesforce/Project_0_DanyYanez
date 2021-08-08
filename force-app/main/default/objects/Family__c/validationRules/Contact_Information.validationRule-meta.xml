@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Information</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(ISBLANK(e_Mail__c),
+   ISBLANK(Telephone__c)
+)</errorConditionFormula>
+    <errorMessage>You must provide your contact information</errorMessage>
+</ValidationRule>
