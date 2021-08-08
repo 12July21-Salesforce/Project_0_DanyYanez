@@ -20,6 +20,7 @@
         <members>Pet__c</members>
         <members>Pet_Adopted__c</members>
         <members>Shelter__c</members>
+        <members>Inventory__c</members>
         <name>CustomObject</name>
     </types>
     <types>
@@ -31,7 +32,7 @@
         <name>PermissionSet</name>
     </types>
     <types>
-        <members>*</members>
+        <members>Shelter</members>
         <name>CustomApplication</name>
     </types>
     <types>
