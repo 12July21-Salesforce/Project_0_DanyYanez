@@ -85,10 +85,7 @@
         <members>*</members>
         <name>Flexipage</name>
     </types>
-    <types>
-        <members>Family_Pending_Info</members>
-        <name>Flexipage</name>
-    </types>
+    
 </Package>
 
     
