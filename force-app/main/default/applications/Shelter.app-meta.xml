@@ -60,5 +60,4 @@
     <tabs>Shelter__c</tabs>
     <tabs>Inventory__c</tabs>
     <uiType>Lightning</uiType>
-    <utilityBar>Shelter_UtilityBar</utilityBar>
 </CustomApplication>
