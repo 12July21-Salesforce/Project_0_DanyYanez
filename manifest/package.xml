@@ -42,13 +42,9 @@
         <name>CustomObject</name>
     </types>
     <types>
-        <recordTypes>
-        <fullName>Pet Checked</fullName>
-        <fullName>Pet Not Checked</fullName>
-        </recordTypes>
-    </types>
-    <types>
-        <members>*</members>
+        <members>Custom: Administrative</members>
+        <members>Custom: Manager</members>
+        <members>Custom: Operative</members>
         <name>Profile</name>
    </types>
    <types>
@@ -63,7 +59,7 @@
         <members>*</members>
         <name>CustomTab</name>
     </types>
-    <version>52.0</version>
+   
     <types>
         <members>Breed_Wizard</members>
         <members>Adoption_Process</members>
@@ -89,7 +85,11 @@
         <members>*</members>
         <name>ContentAsset</name>
     </types>
-    
+    <types>
+        <members>Family_Pending_Info</members>
+        <name>EmailTemplate</name>
+    </types>
+     <version>52.0</version>
 </Package>
 
     

@@ -15,8 +15,10 @@
         <allowDelegate>false</allowDelegate>
         <assignedApprover>
             <approver>
-                <type>userHierarchyField</type>
+                <name>swilson@shelter.com</name>
+                <type>user</type>
             </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
         <label>Assitant Approval</label>
         <name>Assitant_Approval</name>
@@ -25,8 +27,10 @@
         <allowDelegate>false</allowDelegate>
         <assignedApprover>
             <approver>
-                <type>userHierarchyField</type>
+                <name>jsmith@shelter.com</name>
+                <type>user</type>
             </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
         <entryCriteria>
             <formula>IF(Family_Name__r.Zip_Code__c &lt;&gt;
