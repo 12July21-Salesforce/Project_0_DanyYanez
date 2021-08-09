@@ -59,7 +59,6 @@
         <members>*</members>
         <name>CustomTab</name>
     </types>
-   
     <types>
         <members>Breed_Wizard</members>
         <members>Adoption_Process</members>
@@ -79,7 +78,7 @@
     </types>
     <types>
         <members>*</members>
-        <name>Flexipage</name>
+        <name>FlexiPage</name>
     </types>
     <types>
         <members>*</members>
