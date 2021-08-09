@@ -9,7 +9,7 @@
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
-        <template>unfiled$public/Family_Pending_Info</template>
+        <template>Family_Pending_Info/Family_Pending_Info</template>
     </alerts>
     <rules>
         <fullName>Family Pending Status</fullName>
