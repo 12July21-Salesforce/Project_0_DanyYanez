@@ -42,9 +42,9 @@
         <name>CustomObject</name>
     </types>
     <types>
-        <members>Custom: Administrative</members>
-        <members>Custom: Manager</members>
-        <members>Custom: Operative</members>
+        <members>Custom Administrative</members>
+        <members>Custom Manager</members>
+        <members>Custom Operative</members>
         <name>Profile</name>
    </types>
    <types>

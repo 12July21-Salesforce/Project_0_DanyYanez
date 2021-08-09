@@ -26,7 +26,7 @@
         <formFactor>Large</formFactor>
         <pageOrSobjectType>standard-home</pageOrSobjectType>
         <type>Flexipage</type>
-        <profile>Custom: Administrative</profile>
+        <profile>Custom Administrative</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>Tab</actionName>
@@ -34,7 +34,7 @@
         <formFactor>Large</formFactor>
         <pageOrSobjectType>standard-home</pageOrSobjectType>
         <type>Flexipage</type>
-        <profile>Custom: Manager</profile>
+        <profile>Custom Manager</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>Tab</actionName>
@@ -42,7 +42,7 @@
         <formFactor>Large</formFactor>
         <pageOrSobjectType>standard-home</pageOrSobjectType>
         <type>Flexipage</type>
-        <profile>Custom: Operative</profile>
+        <profile>Custom Operative</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>Tab</actionName>
