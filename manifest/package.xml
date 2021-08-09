@@ -85,6 +85,10 @@
         <members>*</members>
         <name>Flexipage</name>
     </types>
+    <types>
+        <members>*</members>
+        <name>ContentAsset</name>
+    </types>
     
 </Package>
 
