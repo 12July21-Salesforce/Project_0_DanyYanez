@@ -112,6 +112,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Pet__c.Date_Adopted__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Pet__c.Date_Arrived_In_Shelter__c</field>
         <readable>false</readable>
     </fieldPermissions>

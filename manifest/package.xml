@@ -1,18 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">    
     <types>
         <members>*</members>
         <name>ApexClass</name>
     </types>
     <types>
-        <recordTypes>
-        <fullName>Pet Checked</fullName>
-        <fullName>Pet Not Checked</fullName>
-        </recordTypes>
+        <members>*</members>
+        <name>ApexTrigger</name>
     </types>
     <types>
         <members>*</members>
-        <name>ApexTrigger</name>
+        <name>ApexComponent</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexTestSuite</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>LightningComponentBundle</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>StaticResource</name>
     </types>
     <types>
         <members>Breed__c</members>
@@ -22,6 +40,12 @@
         <members>Shelter__c</members>
         <members>Inventory__c</members>
         <name>CustomObject</name>
+    </types>
+    <types>
+        <recordTypes>
+        <fullName>Pet Checked</fullName>
+        <fullName>Pet Not Checked</fullName>
+        </recordTypes>
     </types>
     <types>
         <members>*</members>
@@ -40,4 +64,31 @@
         <name>CustomTab</name>
     </types>
     <version>52.0</version>
+    <types>
+        <members>Breed_Wizard</members>
+        <members>Adoption_Process</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApprovalProcess</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Workflow</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>HomePageLayout</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Flexipage</name>
+    </types>
+    <types>
+        <members>Family_Pending_Info</members>
+        <name>Flexipage</name>
+    </types>
 </Package>
+
+    
