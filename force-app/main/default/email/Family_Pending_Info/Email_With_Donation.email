@@ -1,0 +1,6 @@
+Hello,
+
+New donation was received from {!Donation__c.Donator_Name__c} for this inventory 
+{!Donation__c.Inventory__c}
+
+Please be aware for the delivery

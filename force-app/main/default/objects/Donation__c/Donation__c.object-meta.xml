@@ -153,12 +153,13 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ControlledByParent</externalSharingModel>
-    <label>Inventory</label>
+    <label>Donation</label>
     <nameField>
-        <label>Inventory Name</label>
-        <type>Text</type>
+        <displayFormat>Donation-{0000}</displayFormat>
+        <label>Donation Name</label>
+        <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Inventories</pluralLabel>
+    <pluralLabel>Donations</pluralLabel>
     <searchLayouts></searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
