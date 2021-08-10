@@ -14,4 +14,6 @@ Steps for deploying this org:
   12. In the administrator profile change the object level security CRED and field level security for all the objects
   13. Change Tabs to default ON
 
+REALLY IMPORT DON'T FORGET TO CREATE A NEW BRANCH WHIT THE NAME OF THE FEATURE THAT YOU ARE GONIG TO IMPLEMENT AND WORK IN THAT BRANCH
+
   
