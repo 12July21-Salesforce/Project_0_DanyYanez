@@ -65,7 +65,7 @@
         <members>Breed_Wizard</members>
         <members>Adoption_Process</members>
         <members>Check_Status</members>
-        <members>New_Inventory</members>
+        <members>New_Inventory</members>        
         <name>Flow</name>
     </types>
     <types>
