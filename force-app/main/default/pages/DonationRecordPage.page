@@ -1,0 +1,25 @@
+<apex:page standardController="Donation__c" lightningStylesheets="true">
+    <apex:form>
+        <apex:pageBlock id="donation" title="Donation">
+            <apex:pageBlockSection >
+                <apex:outputField value="{!Donation__c.Inventory__r.Shelter__r.Name}" label="Shelter to Donate:"/>
+                <apex:outputField value="{!Donation__c.Inventory__r.Shelter__r.City__c}" label="City:"/>
+                <apex:outputField value="{!Donation__c.Blankets_Needed__c}" label="Blankets Needed:"/>
+                <apex:inputField value="{!Donation__c.Blankets_to_Donate__c}" label="Blankets to Donate:"/>
+                <apex:outputField value="{!Donation__c.Crates_Needed__c}" label="Crates Needed:"/>
+                <apex:inputField value="{!Donation__c.Crates_to_Donate__c}" label="Crates to Donate:"/>
+                <apex:outputField value="{!Donation__c.Food_Needed__c}" label="Food Needed:"/>
+                <apex:inputField value="{!Donation__c.Food_to_Donate__c}" label="Food to Donate:"/>
+                <apex:outputField value="{!Donation__c.Leashes_Needed__c}" label="Leashes Needed:"/>
+                <apex:inputField value="{!Donation__c.Leashes_to_Donate__c}" label="Leashes to Donate:"/>
+                <apex:outputField value="{!Donation__c.Towels_Needed__c}" label="Towels Needed:"/>
+                <apex:inputField value="{!Donation__c.Towels_to_Donate__c}" label="Towels to Donate:"/>
+                <apex:outputField value="{!Donation__c.Toys_Needed__c}" label="Toys Needed:"/>
+                <apex:inputField value="{!Donation__c.Chew_Toys__c}" label="Toys to Donate:"/>
+                <apex:pageMessages />
+
+            </apex:pageBlockSection>
+
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -4,7 +4,7 @@
             <apex:pageMessages />
             <apex:pageBlockTable var="don" value="{!donations}" >
                 <apex:column headerValue="Name">
-                    <apex:outputLink value="{!URLFOR($Action.Donation__c.View, don.id)}">
+                    <apex:outputLink value="{!URLFOR($Page.DonationRecordPage, null, [id=don.id])}">
                         <apex:outputField value="{!don.Name}"/>
                     </apex:outputLink>
                 </apex:column>
@@ -15,3 +15,4 @@
         </apex:pageBlock>
     </apex:form>
 </apex:page>
+
