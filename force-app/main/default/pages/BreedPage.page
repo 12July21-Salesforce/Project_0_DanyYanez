@@ -1,0 +1,22 @@
+<apex:page controller="Breed_CC" lightningStylesheets="true">
+    <apex:form>
+        <apex:pageBlock title="List of Available Breeds">
+            <apex:pageBlockTable var="b" value="{!breedList}" >
+                <apex:column headerValue="Breed Name" value="{!b.Name}"/>
+                <apex:column headerValue="Coat Length" value="{!b.Coat_Length__c}"/>
+                <apex:column headerValue="Coat Type" value="{!b.Coat_Type__c}"/>
+                <apex:column headerValue="Energy" value="{!b.Energy_Level__c}"/>
+                <apex:column headerValue="Trainability" value="{!b.Trainability_Level__c}"/>
+                <apex:column headerValue="Height" value="{!b.Height__c}"/>
+                <apex:column headerValue="Weight" value="{!b.Weight__c}"/>
+                <apex:column headerValue="Barking Level" value="{!b.Barking_Level__c}"/>
+                <apex:column headerValue="Good With Kids" value="{!b.Good_With_Kids__c}"/>
+                <apex:column headerValue="Good With Dogs" value="{!b.Good_With_Other_Dogs__c}"/>
+                <apex:column headerValue="Life Expectancy" value="{!b.Life_Expectancy__c}"/>
+            </apex:pageBlockTable>  
+            <apex:pageBlockButtons>
+                <apex:commandButton value="Create New Breed" action="{!createBreedPage}"/>
+            </apex:pageBlockButtons>          
+        </apex:pageBlock>
+	</apex:form>
+</apex:page>
