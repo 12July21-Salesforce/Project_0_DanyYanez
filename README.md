@@ -11,8 +11,7 @@ Steps for deploying this org:
   9. You have to repeat this procces about 3 times to find all the error and replace users
   10. When the deployment is succesfull go to your org => Setup => App Manager 
   11. Look for shelter app and make it viseble for System Administrator
-  12. In the administrator profile change the object level security CRED and field level security for all the objects
-  13. Change Tabs to default ON
+  
 
 REALLY IMPORT DON'T FORGET TO CREATE A NEW BRANCH WHIT THE NAME OF THE FEATURE THAT YOU ARE GONIG TO IMPLEMENT AND WORK IN THAT BRANCH
 
