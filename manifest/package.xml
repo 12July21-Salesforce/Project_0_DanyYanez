@@ -26,6 +26,7 @@
         <members>Pet_AdoptedTriggerHandler</members>
         <members>PetTriggerHandler</members>
         <members>ShelterTriggerHandler</members>
+        <members>LoadDataTestFactory</members>
         <name>ApexClass</name>
     </types>
     <types>

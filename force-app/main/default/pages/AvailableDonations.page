@@ -3,13 +3,18 @@
         <apex:pageBlock id="donationlist" title="Donations">
             <apex:pageBlockButtons >              
                 <apex:commandButton value="Return to Home" action="{!goHomePage}" />
+                <apex:commandButton action="{!DonRecordPage}" value="Select"  />
             </apex:pageBlockButtons>
             <apex:pageMessages />
             <apex:pageBlockTable var="don" value="{!donList}" >
-                <apex:column headerValue="Name">
+                <!--<apex:column headerValue="Name">
                     <apex:commandLink action="/apex/DonationRecordPage?id={!don.id}" value="{!don.Name}"/>
+                </apex:column>-->
+                <apex:column width="25px" headerValue="Select">
+                    <apex:inputCheckbox value="{!don.checked}" />
                 </apex:column>
-                <apex:column headerValue="Shelter" value="{!don.Inventory__r.Name}"/>
+                <apex:column headerValue="Name" value="{!don.name}"/>
+                <apex:column headerValue="Shelter" value="{!don.invName}"/>
             </apex:pageBlockTable>
         </apex:pageBlock>
     </apex:form>
