@@ -1,0 +1,18 @@
+h1 { color:red; text-align: center;   }
+h2{text-align: center; font-size: 300% ;}
+p { background-color: #eec;  }
+newLink { color: #f60; font-weight: bold;background-color:blue; }
+head{color:blue;}
+div{width: "80%";}
+buttonStyle{text-align: center;  }
+buttonCenter{   text-align: center;}
+pageBlockWidth{width: "80%";}
+.myDiv {
+         
+    background-color: lightblue;
+  
+    background-image: url("{!URLFOR($Resource.StylesheetAndImg, 'StylesheetAndImg/images/background2.jpg')}");
+   
+     
+     
+  }

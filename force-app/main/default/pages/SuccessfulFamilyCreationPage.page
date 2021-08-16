@@ -1,0 +1,18 @@
+<apex:page controller="MessageController" action="{!displayApexMsg}" >
+            <apex:form > 
+            <apex:stylesheet value="{!$Resource.familyPageStylesheet}" />
+            <apex:pageMessages />
+            <style>
+                .myDiv {
+                  background-color: lightblue;
+                  background-image: url("{!URLFOR($Resource.StylesheetAndImg, 'StylesheetAndImg/images/background2.jpg')}");
+                 }
+            </style>
+            <body class="myDiv"> 
+                
+                <apex:actionPoller action="{!MessageToHomePage }"   interval="5"/>
+                 
+                
+            </body>
+            </apex:form>
+</apex:page>
