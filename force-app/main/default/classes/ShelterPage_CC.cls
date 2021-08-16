@@ -14,6 +14,7 @@ public with sharing class ShelterPage_CC {
         }
         set;
     }
+
   /*  public static void homePage() {
         return HomePage;
     }
