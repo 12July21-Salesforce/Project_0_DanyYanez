@@ -1,18 +1,16 @@
-<apex:page standardController="Donation__c" recordSetVar="donations" lightningStylesheets="true">
-    <apex:form>
+<apex:page standardController="Donation__c"  extensions="DonationPage_CC" lightningStylesheets="true">
+    <apex:form >
         <apex:pageBlock id="donationlist" title="Donations">
+            <apex:pageBlockButtons >              
+                <apex:commandButton value="Return to Home" action="{!goHomePage}" />
+            </apex:pageBlockButtons>
             <apex:pageMessages />
-            <apex:pageBlockTable var="don" value="{!donations}" >
+            <apex:pageBlockTable var="don" value="{!donList}" >
                 <apex:column headerValue="Name">
-                    <apex:outputLink value="{!URLFOR($Page.DonationRecordPage, null, [id=don.id])}">
-                        <apex:outputField value="{!don.Name}"/>
-                    </apex:outputLink>
+                    <apex:commandLink action="/apex/DonationRecordPage?id={!don.id}" value="{!don.Name}"/>
                 </apex:column>
-                <apex:column value="{!don.Inventory__r.Shelter__r.Name}"/>
-                <apex:column value="{!don.Inventory__r.Shelter__r.Zip_Code__c}"/>
-                <apex:column value="{!don.Inventory__r.Shelter__r.City__c}"/>
+                <apex:column headerValue="Shelter" value="{!don.Inventory__r.Name}"/>
             </apex:pageBlockTable>
         </apex:pageBlock>
     </apex:form>
 </apex:page>
-

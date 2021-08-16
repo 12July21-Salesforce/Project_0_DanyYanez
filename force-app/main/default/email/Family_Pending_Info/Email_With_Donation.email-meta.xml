@@ -4,7 +4,7 @@
     <encodingKey>ISO-8859-1</encodingKey>
     <name>Email With Donation</name>
     <style>none</style>
-    <subject>We Received New Donation!</subject>
+    <subject>{!Inventory__c.Shelter__c} Just Received New Donation!</subject>
     <type>text</type>
     <uiType>Aloha</uiType>
 </EmailTemplate>

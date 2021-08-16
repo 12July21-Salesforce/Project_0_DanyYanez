@@ -1,6 +1,11 @@
 Hello,
 
-New donation was received from {!Donation__c.Donator_Name__c} for this inventory 
-{!Donation__c.Inventory__c}
+New donation was received to {!Inventory__c.Shelter__c}, donations has the following items 
+Blankets:         {!Donation__c.Blankets_to_Donate__c}
+Crates:            {!Donation__c.Crates_to_Donate__c}
+Food:               {!Donation__c.Food_to_Donate__c}
+Leashes:         {!Donation__c.Leashes_to_Donate__c}
+Paper Towels: {!Donation__c.Towels_to_Donate__c}
+Chew Toys:     {!Donation__c.Chew_Toys__c}
 
 Please be aware for the delivery

@@ -18,12 +18,7 @@
             <type>Alert</type>
         </actions>
         <active>true</active>
-        <formula>or(not(ISBLANK(Blankets_to_Donate__c)),
-   not(ISBLANK(Crates_to_Donate__c )),
-   not(ISBLANK(Food_to_Donate__c )),
-   not(ISBLANK(Leashes_to_Donate__c )),
-   not(ISBLANK(Towels_to_Donate__c )),
-   not(ISBLANK(Chew_Toys__c )))</formula>
+        <formula>or(not(ISBLANK(Blankets_to_Donate__c)),    not(ISBLANK(Crates_to_Donate__c )),    not(ISBLANK(Food_to_Donate__c )),    not(ISBLANK(Leashes_to_Donate__c )),    not(ISBLANK(Towels_to_Donate__c )),    not(ISBLANK(Chew_Toys__c )))</formula>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
 </Workflow>
