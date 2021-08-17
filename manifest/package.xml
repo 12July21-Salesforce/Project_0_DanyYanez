@@ -14,10 +14,6 @@
     </types>
     <types>
         <members>*</members>
-        <name>Portal</name>
-    </types>
-    <types>
-        <members>*</members>
         <name>Document</name>
     </types>
     <types>
