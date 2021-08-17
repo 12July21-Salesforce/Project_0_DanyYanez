@@ -17,6 +17,7 @@
         <apex:pageBlockButtons>
             <apex:commandButton value="Save Breed" action="{!saveBreed}"/>
             <apex:commandButton value="Cancel" action="{!breedPage}"/>
+            <!-- <apex:commandButton value="Home" action="{!homePage}"/> -->
         </apex:pageBlockButtons>
     </apex:pageBlock>
 </apex:form>

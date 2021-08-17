@@ -16,6 +16,7 @@
             </apex:pageBlockTable>  
             <apex:pageBlockButtons>
                 <apex:commandButton value="Create New Breed" action="{!createBreedPage}"/>
+                <!-- <apex:commandButton value="Home" action="{!homePage}"/> -->
             </apex:pageBlockButtons>          
         </apex:pageBlock>
 	</apex:form>
