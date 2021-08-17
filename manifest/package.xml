@@ -6,6 +6,8 @@
         <members>Pet_AdoptedTriggerHandler</members>
         <members>PetTriggerHandler</members>
         <members>ShelterTriggerHandler</members>
+        <members>Breed_CC</members>
+        <members>Breed_CC_Test</members>
         <name>ApexClass</name>
     </types>
     <types>
@@ -19,6 +21,8 @@
     <types>
         <members>DonationRecordPage</members>
         <members>AvailableDonations</members>
+        <members>BreedPage</members>
+        <members>CreateBreedPage</members>
         <name>ApexPage</name>
     </types>
     <types>
