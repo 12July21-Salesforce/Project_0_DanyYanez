@@ -12,7 +12,7 @@ public with sharing class AdoptionProcessCC {
         get {
             if (adoptList == null) {
                 adoptList = new List<Pet_Adopted__c>();
-                for(Pet_Adopted__c adopted : [SELECT Id, Pet_Name__c FROM Pet_Adopted__c]) {
+                for(Pet_Adopted__c adopted : [SELECT Id, Pet_Name__c FROM Pet_Adopted__c WHERE Pet_Name__r.Status__c = '']) {
                     adoptList.add(adopted);
                 }
             }

@@ -18,6 +18,7 @@
                     <!--Allows you to click on a pet record and open it in a new tab, so you can get more info-->
                     <apex:column headerValue="Pet Name"><apex:outputLink value="/{!URLFOR(o.Id)}" target = "_blank">{!o.Name}</apex:outputLink></apex:column>
                     <apex:column value="{!o.Breed__r.Name}"/>
+                    <apex:column value="{!o.Status__c}"/>
                 </apex:pageblocktable>
             </apex:pageBlocksection>
         </apex:pageBlock>
