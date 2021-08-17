@@ -1,5 +1,5 @@
 <apex:page controller="Breed_CC" lightningStylesheets="true">
-    <apex:form>
+    <apex:form >
         <apex:pageBlock title="List of Available Breeds">
             <apex:pageBlockTable var="b" value="{!breedList}" >
                 <apex:column headerValue="Breed Name" value="{!b.Name}"/>
@@ -14,7 +14,7 @@
                 <apex:column headerValue="Good With Dogs" value="{!b.Good_With_Other_Dogs__c}"/>
                 <apex:column headerValue="Life Expectancy" value="{!b.Life_Expectancy__c}"/>
             </apex:pageBlockTable>  
-            <apex:pageBlockButtons>
+            <apex:pageBlockButtons >
                 <apex:commandButton value="Create New Breed" action="{!createBreedPage}"/>
                 <!-- <apex:commandButton value="Home" action="{!homePage}"/> -->
             </apex:pageBlockButtons>          

@@ -6,10 +6,10 @@
     <communityRoles/>
     <disableReputationRecordConversations>true</disableReputationRecordConversations>
     <emailSenderAddress>alejandro.yanez@revature.net</emailSenderAddress>
-    <emailSenderName>Shelter League</emailSenderName>
+    <emailSenderName>Shelterly</emailSenderName>
     <enableCustomVFErrorPageOverrides>false</enableCustomVFErrorPageOverrides>
     <enableDirectMessages>true</enableDirectMessages>
-    <enableExperienceBundleBasedSnaOverrideEnabled>false</enableExperienceBundleBasedSnaOverrideEnabled>
+    <enableExperienceBundleBasedSnaOverrideEnabled>true</enableExperienceBundleBasedSnaOverrideEnabled>
     <enableGuestChatter>false</enableGuestChatter>
     <enableGuestFileAccess>false</enableGuestFileAccess>
     <enableGuestMemberVisibility>false</enableGuestMemberVisibility>
@@ -20,7 +20,7 @@
     <enablePrivateMessages>false</enablePrivateMessages>
     <enableReputation>false</enableReputation>
     <enableShowAllNetworkSettings>false</enableShowAllNetworkSettings>
-    <enableSiteAsContainer>false</enableSiteAsContainer>
+    <enableSiteAsContainer>true</enableSiteAsContainer>
     <enableTalkingAboutStats>true</enableTalkingAboutStats>
     <enableTopicAssignmentRules>true</enableTopicAssignmentRules>
     <enableTopicSuggestions>false</enableTopicSuggestions>
@@ -32,23 +32,20 @@
     </networkMemberGroups>
     <networkPageOverrides>
         <changePasswordPageOverrideSetting>Standard</changePasswordPageOverrideSetting>
-        <forgotPasswordPageOverrideSetting>Standard</forgotPasswordPageOverrideSetting>
-        <homePageOverrideSetting>VisualForce</homePageOverrideSetting>
-        <loginPageOverrideSetting>Standard</loginPageOverrideSetting>
-        <selfRegProfilePageOverrideSetting>Standard</selfRegProfilePageOverrideSetting>
+        <forgotPasswordPageOverrideSetting>Designer</forgotPasswordPageOverrideSetting>
+        <homePageOverrideSetting>Designer</homePageOverrideSetting>
+        <loginPageOverrideSetting>Designer</loginPageOverrideSetting>
+        <selfRegProfilePageOverrideSetting>Designer</selfRegProfilePageOverrideSetting>
     </networkPageOverrides>
-    <picassoSite>Shelter_League1</picassoSite>
+    <picassoSite>Shelterly1</picassoSite>
     <selfRegistration>false</selfRegistration>
     <sendWelcomeEmail>true</sendWelcomeEmail>
-    <site>Shelter_League</site>
+    <site>Shelterly</site>
     <status>UnderConstruction</status>
     <tabs>
-        <customTab>About_Shelters</customTab>
-        <customTab>Breed_Information</customTab>
-        <customTab>Register_For_Adoption</customTab>
-        <customTab>Make_a_Donation</customTab>
-        <defaultTab>01r5e000001wRiR</defaultTab>
+        <defaultTab>home</defaultTab>
+        <standardTab>Chatter</standardTab>
     </tabs>
-    <urlPathPrefix>shelterleague</urlPathPrefix>
+    <urlPathPrefix>shelterlyvisualforce</urlPathPrefix>
     <welcomeTemplate>unfiled$public/CommunityWelcomeEmailTemplate</welcomeTemplate>
 </Network>

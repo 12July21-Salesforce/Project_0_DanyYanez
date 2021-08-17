@@ -41,6 +41,7 @@
         <name>ApexComponent</name>
     </types>
     <types>
+        <members>AvailableDonationsPage_Test</members>
         <members>AvailableDonations</members>
         <members>BreedPage</members>
         <members>CreateBreedPage</members>
