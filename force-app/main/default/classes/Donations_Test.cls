@@ -1,13 +1,19 @@
 @isTest
-private class DonationPage_Test {
-    /*
+private class Donations_Test {
     @testSetup
-    public static void loadDonations() {
-        List<Donation__c> dont = LoadDataTestFactory.loadDonations();
+    private static void testData() {
+        List<Donation__c> donTestList = new List<Donation__c>();
+        for (Donation__c don : [SELECT Name, id, Inventory__c, Blankets_Needed__c, Blankets_to_Donate__c, Crates_Needed__c, Crates_to_Donate__c, 
+                                    Food_Needed__c, Food_to_Donate__c, Leashes_Needed__c, Leashes_to_Donate__c, Towels_Needed__c, Towels_to_Donate__c,
+                                    Toys_Needed__c, Chew_Toys__c FROM Donation__c]) {
+            
+                donTestList.add(don);
+            
+        }
     }
 
     @isTest
-    private static void testDonations(){
+    private static void testSearchCoursesNavigation(){
         PageReference availabelDonations = Page.AvailableDonations;
         Test.setCurrentPage(availabelDonations);
 
@@ -41,5 +47,5 @@ private class DonationPage_Test {
         System.assertEquals(Page.AvailableDonations.getURL(), urlAvailable, 'ERROR: Expected to navigate to /apex/listcoursedeliveriespage');
         System.assertEquals(Page.DonationRecordPage.getURL(), urlRecord, 'ERROR: Expected to navigate to /apex/listcoursedeliveriespage');
 
-    }*/
+    }
 }

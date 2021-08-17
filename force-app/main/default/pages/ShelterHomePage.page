@@ -1,0 +1,52 @@
+<apex:page controller="ShelterHomepageController" lightningStylesheets="true"  showHeader = "true">
+
+ 
+   <apex:form id="theForm" styleClass="newLink" > 
+    
+   
+  
+
+ 
+
+        <h2>Shelter Home Page</h2>
+      
+         
+        
+        <apex:pageBlock> 
+        
+        <apex:pageBlockSection> 
+           
+          <apex:commandLink  value=" Find a Shelter"  action="{!FamilyPage }"    rerender="theForm"   />
+          
+           
+       
+      
+                  
+          <apex:commandLink  value="Register for Adoption" action="{!FamilyPage }"   rerender="theForm"   />
+         
+              
+         
+          <apex:commandLink  value="Know our Pets" action="{!FamilyPage }"    rerender="theForm"   />
+        
+        
+          
+          <apex:commandLink  value="Check your adoption process" action="{!FamilyPage }"    rerender="theForm"   />
+       
+              
+           
+          <apex:commandLink  value="Breed Information" action="{!FamilyPage }"   rerender="theForm"   />
+        
+           
+          <apex:commandLink   value="Make a donation" action="{!FamilyPage }"    rerender="theForm"   />
+         
+
+         </apex:pageBlockSection>
+       
+        </apex:pageBlock>
+        
+      
+
+
+   </apex:form>
+
+</apex:page>

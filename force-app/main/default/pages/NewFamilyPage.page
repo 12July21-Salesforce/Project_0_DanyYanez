@@ -1,0 +1,56 @@
+<apex:page controller="NewFamilyControllerClass" lightningStylesheets="true">
+
+ 
+   <apex:form id="theForm"   > 
+   
+    <apex:pageMessages id="showmsg" />
+     
+
+
+
+    <body  > 
+
+        <h1>Register Now</h1>
+        <h2>This is the first step in adding a loving friend to your family.</h2>
+     
+        
+         
+     
+     
+    <apex:pageBlock title=" New Family" id="pageBlockId"  >
+          <apex:pageBlockSection id="pageBlockSectionId"  >
+            <apex:inputField value="{!newFam.Name }"></apex:inputField>
+            <apex:inputField value="{!newFam.Address_2__c }"></apex:inputField>   
+            <apex:inputField value="{!newFam.Address__c }"></apex:inputField>  
+            
+            <apex:inputField value="{!newFam.Telephone__c }"></apex:inputField>  
+            <apex:inputField value="{!newFam.State__c }"></apex:inputField> 
+             <apex:inputField value="{!newFam.Zip_Code__c }"></apex:inputField>  
+            <apex:inputField value="{!newFam.City__c }"></apex:inputField> 
+            
+            <apex:inputField value="{!newFam.e_Mail__c }"></apex:inputField>  
+            <apex:inputField value="{!newFam.Status__c }">
+              <apex:actionSupport event="onchange" reRender="pb"/>
+           </apex:inputField>  
+           
+            
+            
+          </apex:pageBlockSection>
+            
+            <apex:pageBlockSection id="pb" >
+              <apex:inputField value="{!newFam.Notes__c }" rendered="{!newFam.Status__c != 'Approved'}"></apex:inputField> 
+            </apex:pageBlockSection>
+
+            <div class="cent">  
+                 <apex:commandButton value="Finish" action="{!createNewFamily}"  style="cent" rerender="theForm"   />
+            </div>
+      </apex:pageBlock>
+
+      
+      
+    </body>
+
+
+   </apex:form>
+
+</apex:page>

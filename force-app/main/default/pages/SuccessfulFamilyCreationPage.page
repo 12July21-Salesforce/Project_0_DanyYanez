@@ -1,0 +1,15 @@
+<apex:page controller="MessageController" action="{!displayApexMsg}" >
+            <apex:form > 
+            
+            <apex:pageMessages />
+            <style>
+                
+            </style>
+            <body class="myDiv"> 
+                
+                <apex:actionPoller action="{!MessageToHomePage }"   interval="5"/>
+                 
+                
+            </body>
+            </apex:form>
+</apex:page>
