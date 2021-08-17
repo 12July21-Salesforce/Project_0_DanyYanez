@@ -50,6 +50,8 @@
         <members>ShelterPage</members>
         <members>ShelterHomePage</members>
         <members>SuccessfulFamilyCreationPage</members>
+        <members>Pet</members>
+        <members>PetPage</members>
         <name>ApexPage</name>
     </types>
     <types>

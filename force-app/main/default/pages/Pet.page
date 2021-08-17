@@ -1,7 +1,7 @@
 <apex:page standardController="Pet__c" lightningStylesheets="true">
    
     <apex:pageBlock title="Pet Summary">
-        <apex:pageBlockSection>
+        <apex:pageBlockSection >
            
            
           <ul>
