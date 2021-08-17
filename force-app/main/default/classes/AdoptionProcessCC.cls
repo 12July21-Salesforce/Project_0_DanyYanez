@@ -12,7 +12,7 @@ public with sharing class AdoptionProcessCC {
         get {
             if (adoptList == null) {
                 adoptList = new List<Pet_Adopted__c>();
-                for(Pet_Adopted__c adopted : [SELECT Id, Pet_Name__c FROM Pet_Adopted__c WHERE Pet_Name__r.Status__c = '']) {
+                for(Pet_Adopted__c adopted : [SELECT Id, Pet_Name__c FROM Pet_Adopted__c]) {
                     adoptList.add(adopted);
                 }
             }
@@ -64,7 +64,7 @@ public with sharing class AdoptionProcessCC {
             searchResults.Clear();
         }
         String search = '%'+searchText+'%';
-        searchResults = Database.query('SELECT Name, Breed__r.Name FROM Pet__c WHERE Breed__r.Name LIKE :search ORDER BY Breed__r.Name');
+        searchResults = Database.query('SELECT Name, Breed__r.Name, Status__c FROM Pet__c WHERE Breed__r.Name LIKE :search ORDER BY Breed__r.Name');
         return null;
     }
 }
