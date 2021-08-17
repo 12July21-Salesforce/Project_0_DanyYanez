@@ -1,30 +1,20 @@
 <apex:page standardController="Pet__c" recordSetVar="pets" lightningStylesheets="true">
+    <apex:form >
     <apex:pageBlock title="Adoption List">
         <!-- Contacts List -->
         <apex:pageBlockTable value="{! pets }" var="p">
-            <apex:column value="{! p.Name}"/>
+            <apex:column headerValue="Name">
+              <apex:outputlink value="{!$Page.Pet}?id={!p.id}">{!p.Name}</apex:outputlink>
+            </apex:column>
             <apex:column value="{! p.Color__c}"/>
 			<apex:column value="{! p.Breed__c}"/>
 			<apex:column value="{! p.Gender__c}"/> 
             <apex:column value="{! p.Status__c}"/>
+  
         </apex:pageBlockTable>
     </apex:pageBlock>
-      <apex:form >
-    <apex:pageBlock title="Enter pet for Adoption">
-         <apex:pageMessages />
-        <apex:pageBlockSection columns="1" >
-           
-            <apex:inputField required="true" value="{! Pet__c.Name }"/>
-            <apex:inputField value="{! Pet__c.Color__c }"/>
-            <apex:inputField value="{! Pet__c.Shelter__c }"/>
-            <apex:inputField value="{! Pet__c.Breed__C }"/>
-            <apex:inputField value="{! Pet__c.Gender__c }"/>
-       
-        </apex:pageBlockSection>
-        <apex:pageBlockButtons >
-            <apex:commandButton action="{! save }" value="Save" />
-        </apex:pageBlockButtons>
-    </apex:pageBlock>
-    </apex:form>
+     
+    
+          </apex:form>
     
 </apex:page>
