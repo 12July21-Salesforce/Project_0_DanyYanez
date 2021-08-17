@@ -45,8 +45,10 @@
     <status>Live</status>
     <tabs>
         <customTab>About_Shelters</customTab>
+        <customTab>Know_our_Pets</customTab>
         <customTab>Breed_Information</customTab>
         <customTab>Register_For_Adoption</customTab>
+        <customTab>Start_an_Adoption_Process</customTab>
         <customTab>Make_a_Donation</customTab>
         <defaultTab>01r5e000001wRiR</defaultTab>
     </tabs>

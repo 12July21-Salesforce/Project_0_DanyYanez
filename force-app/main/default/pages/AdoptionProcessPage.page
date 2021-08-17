@@ -5,7 +5,7 @@
             <apex:pageblockSection id="searchBlockSection">
                 <apex:pageBlockSectionItem id="searchBlockSectionItem">
                     <apex:outputLabel >Breed</apex:outputLabel>
-                    <apex:panelGroup>
+                    <apex:panelGroup >
                         <apex:inputtext id="searchTextBox" value="{!searchText}"></apex:inputtext>
                         <apex:commandButton Id="btnSearch" action="{!search}" rerender="renderBlock" status="status" title="Search" value="Search">
                         </apex:commandButton>
@@ -16,7 +16,7 @@
             <apex:pageBlocksection id="renderBlock" >
                 <apex:pageblocktable value="{!SearchResults}" var="o" rendered="{!NOT(ISNULL(SearchResults))}">
                     <!--Allows you to click on a pet record and open it in a new tab, so you can get more info-->
-                    <apex:column headerValue="Pet Name"><apex:outputLink value="/{!URLFOR(o.Id)}" target = "_blank">{!o.Name}</apex:outputLink></apex:column>
+                    <apex:column headerValue="Pet Name"><apex:outputLink value="/{!URLFOR(o.Id)}" target="_blank">{!o.Name}</apex:outputLink></apex:column>
                     <apex:column value="{!o.Breed__r.Name}"/>
                     <apex:column value="{!o.Status__c}"/>
                 </apex:pageblocktable>
@@ -26,14 +26,14 @@
     
     <!--Form where Pet_Adopted__c records are created and saved-->
     <apex:form id="enterForm">
-        <apex:pageBlock title = "Enter Pet Adoption Information">
-            <apex:pageMessages/>
+        <apex:pageBlock title="Enter Pet Adoption Information">
+            <apex:pageMessages />
             <apex:pageBlockSection collapsible="false" columns="2">
                 <apex:inputField value="{!pet.Pet_Name__c}"/>
                 <apex:inputField value="{!pet.Family_Name__c}"/>
             </apex:pageBlockSection>
-            <apex:pageBlockButtons>
-                <apex:commandButton value="Save Adoption" action="{!saveAdoption}" rerender = "enterForm"/>
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save Adoption" action="{!saveAdoption}" rerender="enterForm"/>
             </apex:pageBlockButtons>
         </apex:pageBlock>
     </apex:form>
