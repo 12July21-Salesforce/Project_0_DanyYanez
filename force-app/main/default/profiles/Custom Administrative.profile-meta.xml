@@ -10,10 +10,6 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>DonationPage_Test</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>LoadDataTestFactory</apexClass>
         <enabled>false</enabled>
     </classAccesses>

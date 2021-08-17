@@ -17,7 +17,7 @@
         <name>Document</name>
     </types> 
     <types>
-        <members>Breed_CC</members>
+        <members>ShelterPage_CC</members>
         <members>DonationPage_CC</members>
         <members>LoadDataTestFactory</members>
         <members>MessageController</members>
@@ -25,6 +25,7 @@
         <members>NewFamilyPage_Test</members>
         <members>Pet_AdoptedTriggerHandler</members>
         <members>PetTriggerHandler</members>
+        <members>ShelterPage_CC_test</members>
         <members>ShelterHomepageController</members>
         <members>ShelterTriggerHandler</members>
         <members>Breed_CC</members>
@@ -45,6 +46,7 @@
         <members>CreateBreedPage</members>
         <members>DonationRecordPage</members>
         <members>NewFamilyPage</members>
+        <members>ShelterPage</members>
         <members>ShelterHomePage</members>
         <members>SuccessfulFamilyCreationPage</members>
         <name>ApexPage</name>

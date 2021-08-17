@@ -44,10 +44,6 @@ public with sharing class DonationPage_CC {
         return newPage; 
     }
 
-    public PageReference goHomePage(){
-        return Page.AvailableDonations;   
-    }
-
     public class DonationWrapper {
         public Donation__c donation {get; set;}
         public Boolean checked {get; set;}

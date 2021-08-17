@@ -5,7 +5,6 @@
             <apex:pageBlockButtons >              
                 <apex:commandButton value="Donate" action="{!quicksave}" />
                 <apex:commandButton value="Go Back" action="{!availablePage}" />
-                <apex:commandButton value="Return to Home" action="{!goHomePage}" />
             </apex:pageBlockButtons>
             <apex:pageBlockSection >
                 <apex:outputField value="{!Donation__c.Inventory__r.Shelter__r.Name}" label="Shelter to Donate:"/>
