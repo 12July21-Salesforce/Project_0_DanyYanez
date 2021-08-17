@@ -19,7 +19,6 @@
     <types>
         <members>Breed_CC</members>
         <members>DonationPage_CC</members>
-        <members>Donations_Test</members>
         <members>LoadDataTestFactory</members>
         <members>MessageController</members>
         <members>NewFamilyControllerClass</members>
