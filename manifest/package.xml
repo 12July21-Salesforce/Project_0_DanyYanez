@@ -27,6 +27,8 @@
         <members>PetTriggerHandler</members>
         <members>ShelterHomepageController</members>
         <members>ShelterTriggerHandler</members>
+        <members>Breed_CC</members>
+        <members>Breed_CC_Test</members>
         <name>ApexClass</name>
     </types>
     <types>
@@ -71,6 +73,7 @@
         <members>Custom Operative</members>
         <members>Admin</members>
         <name>Profile</name>
+        
    </types>
    <types>
         <members>*</members>

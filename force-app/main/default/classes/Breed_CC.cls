@@ -1,5 +1,20 @@
 public with sharing class Breed_CC {
     
+    // gets values from SOQL query and assigns them to a list of Breed sObjects so you can 
+    // call {!breedList} and use .notation in page to diplay field values from sObject
+    public List<Breed__c> breedList {
+        get {
+            breedList = new List<Breed__c>();
+            for(Breed__c b : [SELECT Name, Barking_Level__c, Coat_Length__c, Coat_Type__c, Energy_Level__c,
+                            Good_With_Kids__c, Good_With_Other_Dogs__c, Height__c, Life_Expectancy__c,
+                            Trainability_Level__c, Weight__c FROM Breed__c]){
+                breedList.add(b);
+            }
+        return breedList;
+        }
+        set;
+    }
+    
     // create a new breed sObject so we can assign field values to it in page 
     Breed__c Br;
     public Breed__c getBr() {
@@ -19,20 +34,9 @@ public with sharing class Breed_CC {
         insert Br;
         return Page.BreedPage;
     }
-
-    // gets values from SOQL query and assigns them to a list of Breed sObjects so you can 
-    // call {!breedList} and use .notation in page to diplay field values from sObject
-    public List<Breed__c> breedList {
-        get {
-            breedList = new List<Breed__c>();
-            for(Breed__c br : [SELECT Name, Barking_Level__c, Coat_Length__c, Coat_Type__c, Energy_Level__c,
-                            Good_With_Kids__c, Good_With_Other_Dogs__c, Height__c, Life_Expectancy__c,
-                            Trainability_Level__c, Weight__c FROM Breed__c]){
-                breedList.add(br);
-            }
-        return breedList;
-        }
-        set;
-    }
+    //return to homepage
+    //public PageReference homePage(){
+    //    return Page.HomePage;
+    //}
 
 }
