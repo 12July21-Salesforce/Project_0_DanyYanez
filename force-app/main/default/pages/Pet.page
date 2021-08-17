@@ -1,0 +1,28 @@
+<apex:page standardController="Pet__c" lightningStylesheets="true">
+   
+    <apex:pageBlock title="Pet Summary">
+        <apex:pageBlockSection>
+           
+           
+          <ul>
+             <li> Name: {! Pet__c.Name } </li>
+             <li> Breed: {! Pet__c.Status__c }</li>
+             
+              <li> Color: {! Pet__c.Color__c }</li>
+                <li> Weight: {! Pet__c.Weight__c }</li>
+                <li> Height: {! Pet__c.Height__c }</li>
+              <li> Gender: {! Pet__c.Gender__c }</li>
+              <li> Medical Status: {! Pet__c.Medical_Status__c }</li>
+              <li> Vaccines: {! Pet__c.Vaccines__c }</li>
+              
+            </ul>
+         
+   		<apex:outputLink value="{!$Page.PetPage}?">
+    			<button>
+                    GO BACK
+            </button>
+			</apex:outputLink>
+         
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>
