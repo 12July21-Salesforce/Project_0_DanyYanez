@@ -1,0 +1,98 @@
+<apex:page controller="ShelterHomepageController" lightningStylesheets="true">
+
+ 
+   <apex:form id="theForm" styleClass="newLink" > 
+    <apex:stylesheet value="{!$Resource.familyPageStylesheet}" />
+    <apex:pageMessages id="showmsg" />
+     
+    <style>
+        .myDiv {
+         
+          background-color: lightblue;
+        
+          background-image: url("{!URLFOR($Resource.StylesheetAndImg, 'StylesheetAndImg/images/background.jpg')}");
+         
+          width:100%;display:inline-block vertical-align:top;
+           
+        }
+        .cent{
+
+          text-align: center;
+           
+          vertical-align: baseline;
+         
+        }
+        .div{
+
+          width:100%;display:inline-block vertical-align:top;
+          text-align: center;
+          margin-top:5%;
+          margin-bottom:5%;
+         
+
+
+        }
+        .linkStyle{
+          padding-left: 30%;
+
+        }
+    </style>
+
+
+    <body class="myDiv"> 
+
+        <h2>Shelter Home Page</h2>
+      
+         
+        
+               
+        <div class="div"> 
+           
+          <apex:commandLink style="padding-right: 30%;font-size:2vw" value=" Find a Shelter"  action="{!FamilyPage }"    rerender="theForm"   />
+          <apex:image value="{!URLFOR($Resource.Img_CSS, 'CSSImages/images/shelter-pngrepo-com.png')}"
+          width="150" height="150" alt=" "/>
+           
+        </div>
+        <div class="div"> 
+                    <apex:image style="margin-left: 20px" value="{!URLFOR($Resource.Img_CSS, 'CSSImages/images/pngwing.com.png')}"
+                    width="120" height="120" alt=" "/>
+                    <apex:commandLink styleClass="linkStyle" value="Register for Adoption" action="{!FamilyPage }"  style="font-size:2vw" rerender="theForm"   />
+        </div>
+        <div class="div"> 
+              
+          <apex:image style="margin-left: 20px" value="{!URLFOR($Resource.Img_CSS, 'CSSImages/images/PngItem_4311908.png')}"
+                    width="180" height="120" alt=" "/>
+          <apex:commandLink styleClass="linkStyle" value="Known our Pets" action="{!FamilyPage }"  style="font-size:2vw" rerender="theForm"   />
+        </div>
+        <div class="div"> 
+            <apex:outputLabel ></apex:outputLabel>
+            <apex:outputLabel ></apex:outputLabel>
+            <apex:outputLabel ></apex:outputLabel>
+            <apex:outputLabel ></apex:outputLabel>
+            <apex:outputLabel ></apex:outputLabel>
+            <apex:outputLabel ></apex:outputLabel>
+          <apex:image style="margin-left: 20px" value="{!URLFOR($Resource.Img_CSS, 'CSSImages/images/kisspng-dog-paw-printing-clip-art-paws-5ac51f76736fb2.6805878715228680864728.png')}"
+                    width="90" height="90" alt=" "/>
+          <apex:commandLink styleClass="linkStyle" value="Check your adoption process" action="{!FamilyPage }"  style="font-size:1.5vw" rerender="theForm"   />
+        </div>
+        <div class="div"> 
+              
+          <apex:image style="margin-left: 20px" value="{!URLFOR($Resource.Img_CSS, 'CSSImages/images/pngarea.com_cute-dog-png-1181041.png')}"
+                    width="120" height="120" alt=" "/>
+          <apex:commandLink styleClass="linkStyle" value="Breed Information" action="{!FamilyPage }"  style="font-size:2vw" rerender="theForm"   />
+        </div>
+        <div class="div"> 
+           
+          <apex:commandLink style="padding-right: 30%;font-size:2vw" value="Make a donation" action="{!FamilyPage }"    rerender="theForm"   />
+          <apex:image style="margin-left: 20px" value="{!URLFOR($Resource.Img_CSS, 'CSSImages/images/PngItem_2947984.png')}"
+                    width="160" height="120" alt=" "/>
+           
+        </div>
+        
+      
+    </body>
+
+
+   </apex:form>
+
+</apex:page>
