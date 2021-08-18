@@ -29,9 +29,11 @@ public with sharing class AdoptionProcessCC {
             }
         }
         Pet__c petToUpdate = [SELECT id FROM Pet__c WHERE id = :pet.Pet_Name__c];
-        petToUpdate.Status__c = 'Adopted';
-        update petToUpdate;
-        insert pet;
+        if(petToUpdate != null) {
+            petToUpdate.Status__c = 'Adopted';
+            update petToUpdate;
+        }
+        if(pet != null) insert pet;
         //Redirects you to new Pet_Adopted record detail page if successful insert
         Pagereference adoptionPage = new ApexPages.StandardController(pet).view();
         adoptionPage.setRedirect(true);
