@@ -1,5 +1,4 @@
-Shelter League Portal
-Team Alchemy-MVC
+Shelter League Portal, by Team Alchemy-MVC
 
 Project Description:
 
