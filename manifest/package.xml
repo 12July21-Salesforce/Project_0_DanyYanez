@@ -9,6 +9,10 @@
         <name>CustomSite</name>
     </types>
     <types>
+        <members>Shelter_League1</members>
+        <name>SiteDotCom</name>
+    </types>
+    <types>
         <members>*</members>
         <name>Document</name>
     </types> 

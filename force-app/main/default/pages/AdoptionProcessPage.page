@@ -22,7 +22,7 @@
                 </apex:pageblocktable>
             </apex:pageBlocksection>
         </apex:pageBlock>
-    </apex:form>
+    </apex:form> 
     
     <!--Form where Pet_Adopted__c records are created and saved-->
     <apex:form id="enterForm">
